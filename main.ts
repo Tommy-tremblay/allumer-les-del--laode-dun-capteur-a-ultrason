@@ -5,7 +5,7 @@ basic.forever(function () {
     DigitalPin.P1,
     PingUnit.Centimeters
     )
-    if (distance < 5) {
+    if (distance <= 5) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -13,39 +13,71 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-    } else if (distance < 10) {
+    } else if (distance <= 10) {
         basic.showLeds(`
             # . . . .
-            # . . . .
-            # . . . .
-            # . . . .
-            # . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
             `)
-    } else if (distance < 15) {
+    } else if (distance <= 15) {
         basic.showLeds(`
             # # . . .
-            # # . . .
-            # # . . .
-            # # . . .
-            # # . . .
+            # . . . .
+            . . . . .
+            . . . . .
+            . . . . .
             `)
-    } else if (distance < 20) {
+    } else if (distance <= 20) {
         basic.showLeds(`
             # # # . .
-            # # # . .
-            # # # . .
-            # # # . .
-            # # # . .
+            # # . . .
+            # . . . .
+            . . . . .
+            . . . . .
             `)
-    } else if (distance < 25) {
+    } else if (distance <= 25) {
         basic.showLeds(`
             # # # # .
+            # # # . .
+            # # . . .
+            # . . . .
+            . . . . .
+            `)
+    } else if (distance <= 30) {
+        basic.showLeds(`
+            # # # # #
             # # # # .
+            # # # . .
+            # # . . .
+            # . . . .
+            `)
+    } else if (distance <= 35) {
+        basic.showLeds(`
+            # # # # #
+            # # # # #
             # # # # .
+            # # # . .
+            # # . . .
+            `)
+    } else if (distance <= 40) {
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
             # # # # .
+            # # # . .
+            `)
+    } else if (distance <= 43) {
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
             # # # # .
             `)
-    } else if (distance < 30) {
+    } else if (distance <= 46) {
         basic.showLeds(`
             # # # # #
             # # # # #
